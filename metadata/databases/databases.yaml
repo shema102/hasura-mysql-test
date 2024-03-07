@@ -1,0 +1,9 @@
+- name: mysql
+  kind: mysql8
+  configuration:
+    template: null
+    timeout: null
+    value:
+      fully_qualify_all_names: false
+      jdbc_url: jdbc:mysql://host.docker.internal:3306/db_name?user=username&password=password
+  tables: "!include mysql/tables/tables.yaml"
